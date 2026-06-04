@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #000000; /* Black background for the hologram effect */
+}
+
+canvas {
+    display: block;
+}
+/* Add this to the end of your style.css file */
+
+#stats-panel {
+    position: fixed;
+    top: 220px; /* Position it below the default GUI panel */
+    right: 15px;
+    width: 240px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /* Makes text sharper */
+}
+
+#stats-panel strong {
+    color: #00aaff; /* A light blue for labels */
+    display: inline-block;
+    width: 100px; /* Align the values */
+}
+
+/* --- VOICE CONTROL BUTTON --- */
+#voice-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    background-color: #222;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101; /* Make sure it's on top */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#voice-btn:hover {
+    background-color: #444;
+}
+
+/* Style for when it's actively listening */
+#voice-btn.listening {
+    background-color: #c00;
+    border-color: #ff5555;
+}
+
+/* --- GESTURE CONTROL BUTTON (Matches Voice Theme) --- */
+#gesture-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 90px; /* Positioned 70px to the right of the voice button */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    background-color: #222;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101; /* Make sure it's on top */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#gesture-btn:hover {
+    background-color: #444;
+}
+
+/* New "active" state, themed blue instead of red */
+#gesture-btn.active {
+    background-color: #007acc;
+    border-color: #55bfff;
+}
