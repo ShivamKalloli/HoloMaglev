@@ -2,7 +2,7 @@
 
 An interactive 3D physics simulation and EdTech platform designed to visualize and compute complex magnetic levitation dynamics. 
 
-HoloMaglev bridges the gap between theoretical physics and interactive learning by providing a high-fidelity, browser-based simulation environment. This project is backed by comprehensive technical documentation and a research paper submitted to IEEE ICIET 2026.
+HoloMaglev bridges the gap between theoretical physics and interactive learning by providing a high-fidelity, browser-based simulation environment. This project is backed by comprehensive technical documentation and a research paper PUBLISHED at 14th IEEE ICIET 2026, Japan.
 
 ## 🚀 Features
 
